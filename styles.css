@@ -1,0 +1,224 @@
+*{ /*Universal Selector*/
+    box-sizing: border-box;
+}
+
+body{ /*Element or type selector*/
+    background-color: rgb(174, 174, 174);
+    /*functional value*/
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+header{ /*Element or type selector*/
+    display: flex;
+    align-items: center;
+    width: 100%;    /*relative value */
+    height: 4.5rem; /*relative value */
+    /* height: 200px; /* fixed value */
+    background-color: white;
+    justify-content: space-around;
+
+    border: 1px solid rgb(246, 0, 0);
+    /*CSS shorthand*/
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+section{
+    display: flex;
+    width: 100%;
+    height: 30rem;
+    background-color: white;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    font-weight: bold;
+    
+}
+
+aside{
+    display: flex;
+    width: 100%;
+    height: 30rem;
+    background-color: white;
+    border: 1px solid black;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+ul{
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    list-style: none;
+}
+
+nav ul li:first-child{ /*Pseudo Class*/
+    font-weight: bold;
+}
+
+.logo{
+    font-size: 2rem;
+    width: 4rem;
+    height: 4rem;
+    background-color: violet;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    justify-content: center; /*horizontal center*/
+    align-items: center; /*vertical center*/
+}
+
+.logo-container{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; /* Small gap between logo and name */
+}
+
+h1{
+    margin: 0; /* Remove default margin */
+    font-size: 1.8rem;
+    color: #333;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    width: 100%;   
+    gap: 0.5rem;
+}
+
+form input{
+    width: 80%;
+    height: 3rem;
+    border-radius: 0.5rem;
+    border: 1px solid rgb(111, 110, 110);
+    padding-left: 1rem;
+    font-size: 1.5rem;
+}
+
+form input::placeholder{
+    font-size: 1.2rem;
+}
+
+button{
+    background-color: violet;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 0.3rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    width: 40%;
+    
+}
+
+.aside-content{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    gap: 2rem;
+}
+
+.left-section{
+    flex: 1;
+}
+
+.right-section{
+    flex: 1;
+}
+
+.left-section h2, .right-section h2{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.personal-info{
+    text-align: right;
+    font-size: 1.2rem;
+    margin-top: 3rem;
+}
+
+.personal-info p{
+    margin: 0.5rem 0;
+}
+
+ol, dl{
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+ol li{
+    margin-bottom: 0.3rem;
+}
+
+dt{
+    font-weight: bold;
+    display: inline; /*same line*/
+    margin-right: 0.5rem;
+}
+
+dd{
+    display: inline;
+    margin-left: 0;
+    margin-right: 2rem;
+}
+
+dd::after{ /*Pseudo Element*/
+    content: '\A'; /*line break*/
+    white-space: pre;
+}
+
+table{
+    width: 200%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    height: 5rem;
+}
+
+th, td{
+    border: 1px solid #333;
+    padding: 0.8rem;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+th{
+    background-color: #f5f5f5;
+    font-weight: bold;
+}
+.box-model {
+    width: 400px;           
+    height: 300px;          /* height of the content area */
+    padding: 20px;          /* space inside box */
+    border:2px solid black; /* border thickness and color */
+    box-sizing: border-box; /* includes padding and border in total width/height */
+    text-align: center;     /* center the text inside */
+    line-height: 150px;     /* vertically center text roughly */
+}
+
+h6 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+footer {
+    height: 5rem;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bold;
+}
